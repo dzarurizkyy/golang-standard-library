@@ -7,5 +7,5 @@ func main() {
 	lastname := "Rizky"
 
 	fmt.Printf("Hello, %s %s 🤗 \n", firstname, lastname)
-	fmt.Println("Hello World 🌎!")
+	fmt.Println("Hello World!")
 }

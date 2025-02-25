@@ -23,14 +23,14 @@ func GetByID(id string) error {
 }
 
 func main() {
-	err := GetByID("")
-
-	/*
-		errors.ls
-		Untuk mengecek jenis type error nya
-	*/
+	err := GetByID("dzaru")
 
 	if err != nil {
+		/*
+			errors.Is
+			Untuk mengecek jenis type error nya
+		*/
+
 		if errors.Is(err, ValidationError) {
 			fmt.Println("Error: validation error")
 		} else if errors.Is(err, NotFoundError) {
