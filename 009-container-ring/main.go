@@ -12,10 +12,13 @@ import (
 */
 
 func main() {
+	// Membuat sebuah circular list baru
 	data := ring.New(5)
 
-	for i := 0; i < data.Len(); i++ {
+	for i := range data.Len() {
+		// Mengatur nilai untuk setiap elemen dalam circular list
 		data.Value = "Value " + strconv.Itoa(i+1)
+		// Berpindah ke elemen berikutnya dalam circular list
 		data = data.Next()
 	}
 

@@ -12,7 +12,7 @@ import (
 
 func main() {
 	/*
-		flag.String(name, value, usage)
+		flag.type(name, value, usage)
 		- name  : nama flag yang akan digunakan dalam command line
 		- value : nilai default untuk flag tersebut
 		- usage : deskripsi penggunaan untuk flag tersebut yang akan ditampilkan dalam help
@@ -27,11 +27,7 @@ func main() {
 	flag.Parse()
 
 	if *help {
-		/*
-			flag.PrintDefaults()
-			Menampilkan bantuan kepada pengguna tentang cara menggunakan flag dalam program
-		*/ 
-		
+		// Menampilkan bantuan kepada pengguna tentang cara menggunakan flag dalam program
 		flag.PrintDefaults()
 	} else {
 		fmt.Println("Username :", *username)
